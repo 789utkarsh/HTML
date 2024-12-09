@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .qr-section{
+         font-style:italic;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-size:45px;
+         text-align: center;
+        }
+        .tag{
+            font-size: 25px;
+        }
+        .qr-image{
+            margin-top: 25px;
+            width: 245px;
+            height: 270px;        
+        }
+        .tag2{
+            padding-top: 22px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .transaction-section{
+            text-align: center;
+            font-size: 22px;
+            border-radius: 20%;
+
+        }
+        #transaction-id{
+            width: 190px;
+            height: 30px;
+        }
+        .payment{ 
+            margin-top: 10px;
+            margin-right: 70px;
+            width:190px;
+        }
+
+    </style>
+
+</head>
+<body>
+   
+    <div class="qr-section">
+        <h1><u>Payment</u></h1>
+        <div class="text" style="margin-top: 5px;">
+            <marquee width="100%" id="GFG" >
+               To confirm order you have to pay 50% of the Total Amount in Advance
+             </marquee>
+         </div>
+
+         <div class="tag">
+            <p><strong>Total Amount:</strong>  <span id="total-amount">0</span> INR</p>
+            <p><strong>Advance Amount (50%):</strong> <span id="advance-amount">0</span> INR</p>
+            <p><strong>Remaining Amount:</strong> <span id="remaining-amount">0</span> INR</p>
+        </div><br>
+        <p class="tag">Scan the QR code below to make a payment:</p>
+        <img class="qr-image" id="qr-code" src="" alt="QR Code for Payment">
+        <p class="tag2">Please enter the Transaction ID after completing the payment:</p>
+    </div>
+
+    <div class="transaction-section">
+        <form>
+           <label for="transaction-id">Transaction ID:</label>
+           <input type="text" id="transaction-id" name="transaction-id" required><br>
+           <button class="payment" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="payment.js"></script>
+    
+</body>
+</html>
+

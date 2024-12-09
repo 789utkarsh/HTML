@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desire Boutique - Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form input, form textarea {
+    width: 210px;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    
+    
+}
+        #pdct{
+            padding: 10px;
+            width: 210px;
+            border-radius: 6px;
+            margin-left: 6%;
+            margin: 8px;
+            
+        }
+        #box{
+            height:20px;
+        }
+        /* Hide booking form initially */
+        #bookingFormContainer {
+            display: none;
+        }
+
+    </style>
+</head>
+<body> 
+    <header>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="category.html">Catalogue</a>
+            <a href="price.html"> Price List</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking </a>
+        </div>
+    </header>
+
+<main>
+    <div id="bookingFormContainer">
+    <div class="booking">
+    <h1>Booking Form</h1>
+    
+    <form id="form1" name="booking">
+        <table>
+        <tr>
+            <td> First Name:</td><td> <input type="text" name="first_name"></td>
+        </tr>
+        <tr>
+            <td> Last Name:</td><td> <input type="text" name="last_name"></td>
+        </tr>
+        <tr>
+            <td> Contact number:</td><td> <input type="tel" name="contact_number"></td>
+        </tr>
+        <tr>
+            <td> Address:</td><td> <input type="address" name="address"> </td>
+        </tr><br>
+        <tr>
+            <td> Landmark:</td><td> <input type="text" name="landmark"> </td>
+        </tr>
+        <tr>
+            <td> City: </td><td> <input type="text" name="city"> </td>
+        </tr>
+        <tr>
+            <td>Pincode:</td><td> <input type="number" name="pincode"> </td>
+        </tr>
+        <tr>
+            <td> Product:  </td><td>
+                <select name="product" placeholder="Prouct" id="pdct">
+                  <option value=" "> </option>
+                  <option value="Blouse">Blouse</option>
+                  <option value="Blouse (Astar)">Blouse (Astar)</option>
+                  <option value="Salwar Suit">Salwar Suit</option>
+                  <option value="Gown">Gown</option>
+                  <option value="Anarkali Suit">Anarkali Suit</option>
+                  <option value="Suit Pant">Suit Pant</option>
+                  <option value="Lehenga">Lehenga</option>
+                  <option value="Kurti">Kurti</option>
+                  <option value="Kurti for Kids">Kurti for Kids</option>
+                  <option value="Frock-Suit">Frock-Suit</option>
+                  <option value="CropTop Skirt">CropTop Skirt</option>
+                  <option value="Kurta Pyjama">Kurta Pyjama</option> 
+                  <option value="Suit Plazo">Suit Plazo</option>
+                  <option value="CropTop Skirt">CropTop Skirt</option>
+                  <option value="Crop-Top">Crop-Top</option>
+                  <option value="Mini-Frock">Mini-Frock</option>
+                  <option value="Co-ord Dress">Co-ord Dress</option>
+                  <option value="Jumpsuit">Jumpsuit</option> 
+                  <option value="Plazo-Dress">Plazo-Dress</option>
+                  <option value="Fall-Pico">Fall-Pico</option>
+                  <option value="Dhoti-Kurta">Dhoti-Kurta</option>
+                  <option value="Maxi-Dress">Maxi-Dress</option>
+                  <option value="Short-Kurta">Short-Kurta</option>
+                  <option value="Suit for Kids">Suit for Kids</option>
+                  <option value="Kurta-Pyjama for Kids">Kurta-Pyjama for Kids</option>
+                  <option value="Kids-Sherwani">Kids-Sherwani</option>
+                  <option value="Dhoti-Kurta for Kids">Dhoti-Kurta for Kids</option>
+                  <option value="Lehenga Choli for Kids">Lehenga Choli for Kids</option>
+                  <option value="Frock">Frock</option>
+                  <option value="Alteration">Alteration</option>
+                </select>
+        </tr>
+        <tr>
+            <td> Quantity:</td><td> <input type="number" name="quantity"></td>
+        </tr>
+        <tr>
+            <td> Price:</td><td> <input type="text" name="price" id="price" readonly></td>
+        </tr>
+        <tr> 
+            <td>Desire for your Dress:</td><td> <input type="text" name="desire_message"> </td>
+        </tr>
+        <tr>
+            <td> Sample (upload design):</td><td> <input type="file" name="sample_design"> </td>
+        </tr>
+       
+        <tr>
+            <td>Select an Appointment :</td> <td><input type="date" name="appointment_date" placeholder="mm//dd//yyyy"></td>
+        </tr>
+        <tr>
+            <td>Appointment Time:</td> <td> <input type="time" name="appointment_time" placeholder="Working hours only"> </td>
+        </tr>
+        <tr>
+            <td>Do you want Fabric?</td><td> <input type="checkbox" id="box" name="need_fabric"> </td>
+        </tr>
+        <tr>
+            <td> Home Delivery?</td><td> <input type="checkbox" id="box" name="home_delivery"></td>
+        </tr>
+       
+    </table>
+    
+        <button type="submit">Book Now</button>
+    </form>
+    
+ </div>
+<br>
+   <div class="note">
+      <h6>Note:Our Tailor will reach out at your destination for your measurement on the same day of booking in working hours.</h6>
+   </div>
+   <br>
+   <div class="page">
+    <a id="anchor" href="contact.html" class="next">&laquo;Previous</a>
+    <a id="anchor" href="#" class="previous">Top &raquo;</a>
+  </div><br>
+
+    <footer style="font-size: 20px;">
+        <p>&copy;  Get Your Dresses Of Your Desire. </p>
+    </footer>
+    </div>
+</main>    
+
+
+
+<style>
+        #closeButton {
+           position:absolute;
+           top: 10px;
+           right: 15px;
+           font-size: 35px;
+           font-weight: bold;
+           color: #0e0a0a;
+           cursor: pointer;
+       }
+   
+       #closeButton:hover {
+           color: #ff0000; /* Highlight on hover for visibility */
+       }
+       /* Styles for overlays */
+       #loginOverlay, #signupOverlay {
+           display: flex;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.8);
+           z-index: 1000;
+           justify-content: center;
+           align-items: center;
+       }
+   
+       #loginForm, #signupForm {
+           background-color: white;
+           padding: 20px;
+           padding-top: 40px;
+           position: relative;
+           width: 450px;
+           border-radius: 8px;
+           text-align: center;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+       }
+   
+       #loginForm input, #signupForm input {
+           width: 100%;
+           padding: 10px;
+           margin: 10px 0;
+           border-radius: 5px;
+           border: 1px solid #ccc;
+       }
+   
+       #loginForm button, #signupForm button {
+           margin-top: 10px;
+           padding: 10px 20px;
+           background-color: #c2576c;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+   
+       #loginForm button:hover, #signupForm button:hover {
+           background-color: #c2576c;
+       }
+   
+       #loginForm p, #signupForm p {
+           margin-top: 15px;
+           font-size: 14px;
+       }
+   
+       #loginForm a, #signupForm a {
+           color: #c2576c;
+           text-decoration: none;
+           cursor: pointer;
+       }
+   
+       #loginForm a:hover, #signupForm a:hover {
+           text-decoration: underline;
+       }
+   </style> 
+    
+    <!-- Login Overlay -->
+ <div id="loginOverlay">
+    <div id="loginForm">
+        <span onclick="redirectToHome()" id="closeButton">&times;</span>
+        <h1>Login</h1>
+        <input type="text" id="loginUsername" placeholder="Enter your username" required>
+        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+    </div>
+</div> 
+
+<!-- Signup Overlay -->
+ <div id="signupOverlay" style="display: none;">
+    <div id="signupForm">
+        <span onclick="redirectToHome()" id="closeButton">&times;</span>
+        <h1>Sign Up</h1>
+        <input type="text" id="signupUsername" placeholder="Enter your username" required>
+        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+        <input type="password" id="signupPassword" placeholder="Create a password" required>
+        <button onclick="signup()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+</div> 
+
+ <script>
+    // JavaScript for displaying and handling login/signup overlays
+    const loginOverlay = document.getElementById('loginOverlay');
+    const signupOverlay = document.getElementById('signupOverlay');
+    const bookingFormContainer = document.getElementById('bookingFormContainer');
+
+
+    function login() {
+        const username = document.getElementById('loginUsername').value;
+        const password = document.getElementById('loginPassword').value;
+   // Check if fields are empty
+        if (!username || !password) {
+      alert("Please fill in both username and password.");
+      return; // Stop further execution if fields are empty
+    }
+
+    // Proceed with the login request if validation passes
+
+        fetch('http://localhost:3000/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+            username: username,
+            password: password
+        })
+    })
+    .then(response => {
+        // Check if the response status indicates an unauthorized error (e.g., 401)
+        if (response.status === 401) {
+            alert("Invalid username or password.");
+            return;
+        } else if (!response.ok) {
+            throw new Error('Network response was not OK');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data && data.message === 'Login successful') {
+            alert('Login successful!');
+            // Hide login overlay and show booking form
+            document.getElementById('loginOverlay').style.display = 'none';  
+            document.getElementById('bookingFormContainer').style.display = 'block';
+        }
+    }) 
+   
+    .catch(error => {
+        console.error("Error:",  error.message);
+        alert("An error occurred while logging in.");
+    });
+}
+  
+    function signup() {
+        const username = document.getElementById('signupUsername').value.trim();
+        const email = document.getElementById('signupEmail').value.trim();
+        const password = document.getElementById('signupPassword').value.trim();
+
+          // Check if any field is empty
+    if (!username || !email || !password) {
+      alert("Please fill in all fields (username, email, and password).");
+      return; // Stop further execution if fields are empty
+    }
+
+    // Proceed with the signup request if validation passes
+
+        fetch('http://localhost:3000/signup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, email, password })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); // Parse JSON response
+    })
+    .then(data => {
+        alert(data.message); // Display the message from the response
+
+        if (data.message === "Account created successfully") {
+            signupOverlay.style.display = 'none';  // Hide overlay on successful signup
+            bookingFormContainer.style.display = 'block';  // Show booking form on successful signup
+        }
+    })
+    .catch(error => {
+        alert('Error: ' + error.message);
+    });
+}
+
+    function showSignup() {
+        loginOverlay.style.display = 'none';
+        signupOverlay.style.display = 'flex';
+    }
+
+    function showLogin() {
+        signupOverlay.style.display = 'none';
+        loginOverlay.style.display = 'flex';
+    }
+    function redirectToHome() {
+        window.location.href = "index.html"; 
+    }
+
+    
+</script>
+
+
+<script src="booking.js"></script>
+        
+</body>
+</html>

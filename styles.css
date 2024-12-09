@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #100104;
+    font-size:larger;
+    background-image:url('bgimage.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    object-fit: fill;
+}
+.logo{
+  padding:20px;
+  border-radius:100%;
+  width: 205px;
+  height: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }                                                                                                                                                                                                                                                                                                          
+.home-heading{
+  font-size: 40px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    background-color:#c2576c;
+    color: white;
+    padding: 15px 0;
+    text-align:justify;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+
+main {
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#heading {
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  font-style:oblique ;
+  font-size: 80px ;
+
+}
+#subHeading {
+  font-size: 30px ;
+  font-family:'Times New Roman', Times, serif ;
+
+}
+
+footer {
+    background-color:#c2576c;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    width: 100%;
+    bottom: 10px;
+}
+
+   .image{
+    
+    padding: 10px;
+    border-radius: 100%;
+    width: 205px;
+    height: 220px;
+   }
+   .image:hover {
+    transform: scale(1.5);
+   }
+   .image2:hover {
+    transform: scale(1.5);
+   }
+   .features{
+    margin-top: 30px;
+  }
+  
+  .features{
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex; 
+    justify-content: space-around;
+  }
+  .fimage{
+    width: 250px;
+    height:270px;
+  }
+  .container{
+    font-size:large;
+    text-align: center;
+    padding: 5px;
+    margin:10px;
+}
+.container-para{ 
+    font-size: 18px;
+    padding:10px;
+    color: #0a0003;
+}
+.container-contact{
+  text-align: center;
+  padding:10px;
+}
+  
+   .card-container{
+    margin-top: 50px;
+    margin-bottom: 30px;
+   }
+   .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    margin-left: 150px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back
+   {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  .card-button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #437b91;
+    border-radius: 15px;
+    box-shadow: 0 8px #817e7e;
+    margin: 50px;
+
+}
+.card-button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#anchor {
+  padding: 8px 16px;
+  font-size:22px;
+  
+}
+
+#anchor:hover {
+  background-color: #ddd;
+  color: black;
+}
+.next,.previous {
+  background-color:rgb(150, 61, 61);
+  color: white;
+  border-radius: 19%;
+}
+.page {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+ 
+}
+
+.category{
+  font-size:40px;
+  font-style: italic;
+  margin: 30px 0;
+  text-align: center;
+}
+.image2{
+  padding: 10px;
+  border-radius: 100%;
+  width: 190px;
+  height: 220px;
+}
+.image-item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#name{
+  font-size: 22px;
+}
+
+.text{
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+  color:#2e0a1e;
+}
+.home-intro{
+    text-align: center;
+}
+
+.block-heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 15px;
+    margin-top: 2px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: #d32e7b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px #817e7e;
+    margin: 20px;
+     }
+  
+  .button:hover {background-color: #31557e} 
+  
+  .booking,.contact,.login{
+    max-width:fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    box-shadow: 0 4px 200px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6) ;
+  }
+form {
+    display:initial;
+    text-align: left;
+}
+
+form label {
+    font-size: 19 px;
+}
+
+form input, form textarea {
+    width: 220px;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    
+}
+form button,.bookingbutton {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 240px;
+    margin: 18px;;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+form.Product{
+ width: 300px;
+}
+.note{
+    text-align: center;
+    font-size:25px;
+}
+
